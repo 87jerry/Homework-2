@@ -79,6 +79,17 @@ contract Arbitrage is Test {
         /**
          * Please add your solution below
          */
+
+        address[] memory justdd=new address [](7);
+		justdd[0]=address(tokenB);
+		justdd[1]=address(tokenA);
+		justdd[2]=address(tokenC);
+		justdd[3]=address(tokenE);
+		justdd[4]=address(tokenD);
+		justdd[5]=address(tokenC);
+		justdd[6]=address(tokenB);
+		router.swapExactTokensForTokens(5 ether,20 ether, justdd,arbitrager,type(uint).max);
+
         /**
          * Please add your solution above
          */
